@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Redirect } from "react-router-dom";
+import AllRoutes from './routes.js';
+import { useState, useContext, createContext } from 'react';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
 
-function App() {
+export const AuthContext = createContext(null);
+
+const App = () => {
+  const checkAuthentication = () => {
+    return localStorage.getItem('isAuthenticated');
+  };
+
+  const isAuthenticated = checkAuthentication();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value = {isAuthenticated} > 
+      <BrowserRouter>
+        <>
+         <AllRoutes></AllRoutes>
+        </>
+      </BrowserRouter>
+    </AuthContext.Provider>
   );
 }
 
