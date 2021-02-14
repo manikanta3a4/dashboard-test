@@ -1,0 +1,64 @@
+.dashboard .search input {
+  width: 40%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.dashboard .search button {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard .all-data .sort button {
+  background-color: green;
+  color: white; 
+}
+
+.dashboard .all-data .operations button {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard .logout {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard .all-data table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dashboard .all-data td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dashboard .all-data{
+  text-align:center;
+}
+
+.dashboard .view-data table{
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.dashboard .view-data td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}

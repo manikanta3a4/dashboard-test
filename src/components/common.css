@@ -1,0 +1,74 @@
+#login-form input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#login-form label {
+  font-weight:800;
+}
+
+#login-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#login-form .error-login {
+  color:red;
+}
+
+.login-page {
+  display:flex;
+  justify-content:center;
+}
+
+#login-form h1{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+#sign-up-form input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#sign-up-form label {
+  font-weight:800;
+}
+
+#sign-up-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#sign-up-form .error-sign {
+  color:red;
+}
+
+.sign-page {
+  display:flex;
+  justify-content:center;
+}
+
+#sign-up-form h1{
+  text-align:center;
+  margin-bottom:60px;
+}
+
